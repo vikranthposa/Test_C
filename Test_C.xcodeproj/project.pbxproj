@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C5FB9E6B1BFA304200CE12C0 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = C5FB9E6A1BFA304200CE12C0 /* main.c */; };
-		C5FB9E731BFAF9CA00CE12C0 /* test_2.c in Sources */ = {isa = PBXBuildFile; fileRef = C5FB9E711BFAF9CA00CE12C0 /* test_2.c */; };
+		C5FD202D1C058633001B4EFC /* checkEditDistance.c in Sources */ = {isa = PBXBuildFile; fileRef = C5FD202B1C058633001B4EFC /* checkEditDistance.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +26,8 @@
 /* Begin PBXFileReference section */
 		C5FB9E671BFA304200CE12C0 /* Test_C */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Test_C; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5FB9E6A1BFA304200CE12C0 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		C5FB9E711BFAF9CA00CE12C0 /* test_2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = test_2.c; sourceTree = "<group>"; };
-		C5FB9E721BFAF9CA00CE12C0 /* test_2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test_2.h; sourceTree = "<group>"; };
+		C5FD202B1C058633001B4EFC /* checkEditDistance.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = checkEditDistance.c; sourceTree = "<group>"; };
+		C5FD202C1C058633001B4EFC /* checkEditDistance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = checkEditDistance.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				C5FB9E6A1BFA304200CE12C0 /* main.c */,
-				C5FB9E711BFAF9CA00CE12C0 /* test_2.c */,
-				C5FB9E721BFAF9CA00CE12C0 /* test_2.h */,
+				C5FD202C1C058633001B4EFC /* checkEditDistance.h */,
+				C5FD202B1C058633001B4EFC /* checkEditDistance.c */,
 			);
 			path = Test_C;
 			sourceTree = "<group>";
@@ -123,8 +123,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5FB9E731BFAF9CA00CE12C0 /* test_2.c in Sources */,
 				C5FB9E6B1BFA304200CE12C0 /* main.c in Sources */,
+				C5FD202D1C058633001B4EFC /* checkEditDistance.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +241,7 @@
 				C5FB9E701BFA304200CE12C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
