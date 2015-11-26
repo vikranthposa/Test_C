@@ -1,4 +1,5 @@
-//
+
+// http://www.geeksforgeeks.org/compare-two-strings-represented-as-linked-lists/
 //  lexicographicallyDiffOfTwoStrings.c
 //  Test_C
 //
@@ -40,7 +41,7 @@ int getLexiDiff(char str1[], char str2[])
     
 }
 
-
+/*
 int main()
 {
     char str1[] = "vikr";
@@ -50,4 +51,5 @@ int main()
     return 0;
     
 }
+ */
 
