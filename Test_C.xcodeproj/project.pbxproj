@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C5FB9E6B1BFA304200CE12C0 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = C5FB9E6A1BFA304200CE12C0 /* main.c */; };
 		C5FD202D1C058633001B4EFC /* checkEditDistance.c in Sources */ = {isa = PBXBuildFile; fileRef = C5FD202B1C058633001B4EFC /* checkEditDistance.c */; };
+		C5FD20301C05CFC1001B4EFC /* lexicographicallyDiffOfTwoStrings.c in Sources */ = {isa = PBXBuildFile; fileRef = C5FD202E1C05CFC1001B4EFC /* lexicographicallyDiffOfTwoStrings.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,7 @@
 		C5FB9E6A1BFA304200CE12C0 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		C5FD202B1C058633001B4EFC /* checkEditDistance.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = checkEditDistance.c; sourceTree = "<group>"; };
 		C5FD202C1C058633001B4EFC /* checkEditDistance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = checkEditDistance.h; sourceTree = "<group>"; };
+		C5FD202E1C05CFC1001B4EFC /* lexicographicallyDiffOfTwoStrings.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lexicographicallyDiffOfTwoStrings.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				C5FB9E6A1BFA304200CE12C0 /* main.c */,
+				C5FD202E1C05CFC1001B4EFC /* lexicographicallyDiffOfTwoStrings.c */,
 				C5FD202C1C058633001B4EFC /* checkEditDistance.h */,
 				C5FD202B1C058633001B4EFC /* checkEditDistance.c */,
 			);
@@ -125,6 +128,7 @@
 			files = (
 				C5FB9E6B1BFA304200CE12C0 /* main.c in Sources */,
 				C5FD202D1C058633001B4EFC /* checkEditDistance.c in Sources */,
+				C5FD20301C05CFC1001B4EFC /* lexicographicallyDiffOfTwoStrings.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
