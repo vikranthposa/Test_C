@@ -7,76 +7,75 @@
 //
 
 #include <stdio.h>
+#include <string.h>
 
-int findDipInxFromLast(int *arr, int size)
-{
-    int curInd = size-2;
-    while (curInd >= 0) {
-        if (arr[curInd] < arr[curInd+1]) {
-            break;
-            }
-        curInd--;
-    }
-    return curInd;
-}
 
-int findNextBigDigit(int *arr ,int size, int startIndx)
+void swap(char * arr, int i,int j)
 {
-    int nxtBigInd = startIndx + 1;
-    for (int i = startIndx+1 ; i<size; i++) {
-        if ( (arr[i] > arr[startIndx]) && (arr[i]<arr[nxtBigInd])) {
-            nxtBigInd = i;
-        }
-    }
-    return nxtBigInd;
-}
-
-void swap(int *arr , int i, int j)
-{
-    int temp = arr[i];
+    int temp;
+    temp = arr[i];
     arr[i] = arr[j];
     arr[j] = temp;
+    
 }
 
-void reverseArrayElements(int *arr, int startIndx, int lastIndx)
+void reverseArrayElements(char *arr, int start, int end)
 {
-    while (startIndx <= lastIndx) {
-        swap(arr, startIndx++, lastIndx--);
+    while (start <= end) {
+        swap(arr, start, end);
+        start++;
+        end--;
     }
     
 }
 
-int findNextMax(int *arr, int size)
+int findNextMax(char *arr)
 {
-    if (size ==0 || size ==1) {
-        return -1;
-    }
-    int dipIdx = findDipInxFromLast(arr, size);
-    if (dipIdx == -1)
+    int smallest,i,j;
+    int size = (int) strlen(arr);
+    
+    if (size <= 1)
         return -1;
     
-    int nextBigDigitIdx = findNextBigDigit(arr, size, dipIdx);
-    swap(arr, dipIdx, nextBigDigitIdx);
-    reverseArrayElements(arr, dipIdx+1, size-1);
+    //find a smaller than the digit next to it search from last, if not found return -1
+    for (i=size-1; i>0; i--) {
+        if (arr[i] <= arr[i-1]) {
+            continue;
+        }
+        break;
+    }
+    if (i == 0)
+        return -1;
+    
+    //find a digit greater than i from all the digits right to i
+    smallest = i;
+    for (j = i ; j<size; j++) {
+        if ((arr[j] > arr[i-1]) && (arr[j]<arr[smallest])) {
+            smallest = j;
+        }
+    }
+    
+    swap(arr, i-1, smallest);
+    reverseArrayElements(arr, i, (int)strlen(arr)-1);
     return 0;
 }
 
 /*
 int main()
 {
-    int arr [] = {5,3,4,9,7,6};
-    int size = sizeof(arr)/sizeof(arr[0]);
-    int nextMax = findNextMax(arr,size);
+    char arr [] = "3212";
+    int nextMax = findNextMax(arr);
     
     if (nextMax == -1) {
         printf("Next Greater Num Cannot Exist");
     } else {
         printf("Next Greateer NUm = ");
-        for (int i=0; i<size; i++) {
-            printf("%d",arr[i]);
-        }
+        puts(arr);
     }
     return 0;
 }
- */
+*/
+
+
+
 
