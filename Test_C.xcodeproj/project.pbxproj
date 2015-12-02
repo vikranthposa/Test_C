@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C503E3461C0E9DA70078356A /* mergeSortedLinkedListsInReverseOrder.c in Sources */ = {isa = PBXBuildFile; fileRef = C503E3451C0E9DA70078356A /* mergeSortedLinkedListsInReverseOrder.c */; };
 		C51F027E1C0747A6002A1895 /* nextGreatNumofSameDigits.c in Sources */ = {isa = PBXBuildFile; fileRef = C51F027D1C0747A6002A1895 /* nextGreatNumofSameDigits.c */; };
 		C5FB9E6B1BFA304200CE12C0 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = C5FB9E6A1BFA304200CE12C0 /* main.c */; };
 		C5FD202D1C058633001B4EFC /* checkEditDistance.c in Sources */ = {isa = PBXBuildFile; fileRef = C5FD202B1C058633001B4EFC /* checkEditDistance.c */; };
@@ -26,6 +27,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C503E3451C0E9DA70078356A /* mergeSortedLinkedListsInReverseOrder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mergeSortedLinkedListsInReverseOrder.c; sourceTree = "<group>"; };
 		C51F027D1C0747A6002A1895 /* nextGreatNumofSameDigits.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = nextGreatNumofSameDigits.c; sourceTree = "<group>"; };
 		C5FB9E671BFA304200CE12C0 /* Test_C */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Test_C; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5FB9E6A1BFA304200CE12C0 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				C5FB9E6A1BFA304200CE12C0 /* main.c */,
+				C503E3451C0E9DA70078356A /* mergeSortedLinkedListsInReverseOrder.c */,
 				C51F027D1C0747A6002A1895 /* nextGreatNumofSameDigits.c */,
 				C5FD202E1C05CFC1001B4EFC /* lexicographicallyDiffOfTwoStrings.c */,
 				C5FD202C1C058633001B4EFC /* checkEditDistance.h */,
@@ -132,6 +135,7 @@
 				C51F027E1C0747A6002A1895 /* nextGreatNumofSameDigits.c in Sources */,
 				C5FB9E6B1BFA304200CE12C0 /* main.c in Sources */,
 				C5FD202D1C058633001B4EFC /* checkEditDistance.c in Sources */,
+				C503E3461C0E9DA70078356A /* mergeSortedLinkedListsInReverseOrder.c in Sources */,
 				C5FD20301C05CFC1001B4EFC /* lexicographicallyDiffOfTwoStrings.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
