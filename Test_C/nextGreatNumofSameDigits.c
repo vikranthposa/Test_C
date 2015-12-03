@@ -6,18 +6,8 @@
 //  Copyright (c) 2015 Vikranth Posa. All rights reserved.
 //
 
-#include <stdio.h>
-#include <string.h>
+#include "common.h"
 
-
-void swap(char * arr, int i,int j)
-{
-    int temp;
-    temp = arr[i];
-    arr[i] = arr[j];
-    arr[j] = temp;
-    
-}
 
 void reverseArrayElements(char *arr, int start, int end)
 {

@@ -6,11 +6,8 @@
 //  Copyright (c) 2015 Vikranth Posa. All rights reserved.
 //
 
-#include <stdio.h>
-
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
+#include "stdio.h"
+#include "stdlib.h"
 
 struct node
 {
@@ -94,8 +91,9 @@ struct node * MergeReverseLinkedLists(struct node *n1,struct node * n2)
     }
     
 }
-
+ 
 /*
+
 int main()
 {
     struct node * n1 = newNode(2);
@@ -118,4 +116,4 @@ int main()
     
     return 0;
 }
-*/
+ */
